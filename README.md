@@ -30,7 +30,7 @@ atom house hackathon
 	diff = true
 ```
 などなど
-@see [asonas/dotfiles](https://github.com/asonas/dotfiles)
+@see [asonas/dotfiles](https://github.com/asonas/dotfiles/blob/master/.gitconfig)
 
 ###説明
 [core]はまぁcoreって感じで覚えておけばOK
