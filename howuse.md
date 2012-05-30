@@ -13,7 +13,7 @@ gitでの一般的なフロー
 この3つの内容はすべて別コミットにするようにするとよい。
 つまり
 
-```
+``` bash
 # 適宜自分のいるブランチの最新版をもってくる
 git pull origin master
 
@@ -94,7 +94,7 @@ gitのベストプラクティスはいろいろありますが、基本的に�
 このコミットを細かくわける方法はブランチの中でたくさんのコミットが出てきて嫌っていう人もいるけど、自分のスキルとあわせてうまく折り合わせていこう。
 どうしてもその人が気難しく「コミット細かくするのダメー」って人ならば
 
-```
+``` bash
 git pull origin devlop
 
 # 新しく新機能用のブランチを切る
@@ -123,7 +123,7 @@ git push origin develop
 
 こうすると、developブランチからは
 
-```
+``` bash
 git co develop
 git log --oneline --graph
 * 9d37f70 hogeの実装をしたよ。piyoを新規で実装したよ。
@@ -131,7 +131,7 @@ git log --oneline --graph
 ```
 こうみえるけど、featureブランチにいくと
 
-```
+``` bash
 git checkout feature
 git log --oneline --graph
 * 041b3db vimのコマンドが入ってたので修正
@@ -144,7 +144,7 @@ developブランチではfeatureのコミットは見えないけど、ちゃん
 
 全体で見ると（適宜コメント書いてます）
 
-```
+``` bash
 yuyaMBP:git-study asonas$ git graph
 * <9d37f70> 2012-05-31 [asonas]  (HEAD, develop) piyoを新規で実装したよ。
 | * <041b3db> 2012-05-31 [asonas]  (feature) vimのコマンドが入ってたので修正 #ここがfeatureブランチでの最後のコミット
